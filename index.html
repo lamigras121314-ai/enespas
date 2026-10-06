@@ -56,7 +56,7 @@
             left: 0;
             width: 100vw;
             height: 100vh;
-            background: rgba(0, 0, 0, 0.65);
+            background: rgba(0, 0, 0, 0.45); /* Reducido un poco para que se vea más el gif de fondo si lo deseas */
             z-index: 1;
         }
 
@@ -71,14 +71,15 @@
         }
 
         .step-block {
-            background: rgba(18, 18, 18, 0.92);
+            /* AQUÍ ESTÁ EL CAMBIO: Fondo negro semitransparente (puedes modificar el último valor '0.35' para más o menos transparencia) */
+            background: rgba(0, 0, 0, 0.35);
             border-radius: 20px;
             padding: 35px 25px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
         }
 
         /* Texto principal con tamaño de fuente grande */
@@ -188,22 +189,22 @@
     <div class="layer"></div>        
 
     <div class="wrap">                
-        <div class="step-block">                        
-            <div class=" "><img src=" " alt=""></div>                        
+        <div class="step-block">                    
+            <div class=" "><img src=" " alt=""></div>                    
             
             <div class="step-item" id="step-1" style="display: block;">                                
                 <div class="question-title">ofrecemos servicios de noche eres mayor de 18?</div>                                
-                <div class="buttons-block">                                        
+                <div class="buttons-block">                                    
                     <button type="button" class="step-btn submit-btn" onclick="nextStep()">SI</button>                                
                     <button type="button" class="step-btn submit-btn" onclick="nextStep()">NO</button>                                
-                </div>                        
-            </div>                        
+                </div>                    
+            </div>                    
 
             <div class="step-item" id="step-2" style="display: none;">                                
                 <div class="question-title">presiona CONTINUAR abajo y realiza tu registro GRATIS Para Poder verlas en vivo y sin rooopa</div>                                
-                <div class="buttons-block">                                        
+                <div class="buttons-block">                                    
                     <a href="https://micolispol.blogspot.com" class="step-btn submit-btn tr-submit-button showmail">CONTINUAR</a>                                
-                </div>                        
+                </div>                    
             </div>
         </div>        
     </div>        
